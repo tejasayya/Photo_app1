@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+    background-image: linear-gradient(to right, #dff3b1 0%, #f9d972 100%); /* Smooth background gradient */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Make the background gradient cover the entire viewport */
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 300%;
+  }
+  
+  h2 {
+    color: #4a4a4a;
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: #0077c2;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Content Styles */
+  .content {
+    background-color: rgba(255, 255, 255, 0.9); /* White background with some transparency */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; /* Add a border radius for a smoother look */
+    max-width: 800px;
+    padding: 20px;
+    width: 90%; /* Set a maximum width and center the content */
+  }
+  
+  /* Center the content horizontally */
+  .content {
+    margin: 0 auto;
+  }
+  
+  /* List Styles */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 5px 0;
+    font-size: 250%;
+  }
+
+  /* src/TypeWriterEffect.css */
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    animation: blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+}
