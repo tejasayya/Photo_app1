@@ -41,6 +41,18 @@ const session = require("express-session");
 const bodyParser = require("body-parser");
 const multer = require("multer");
 const path = require("path");
+const cors = require('cors');
+
+app.use(cors(
+  {
+    origin: [""],
+    methods: ["POST", "GET"],
+    credentials: true
+  }
+));
+app.use(express.json())
+
+mongoose.connect('mongodb+srv://ronptts:d2UGecUj9rEFmOQc@personalcluster0.oj731c1.mongodb.net/ReactProject?retryWrites=true&w=majority&appName=PersonalCluster0')
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
